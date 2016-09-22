@@ -16,7 +16,7 @@ RUN \
 RUN \
     pecl install redis && \
     pecl install mongodb && \
-    pecl clear-cache && \
+    pecl clear-cache
     
 RUN \
     docker-php-ext-install pdo_mysql opcache exif gd sockets mcrypt && \
